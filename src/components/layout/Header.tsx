@@ -1,9 +1,18 @@
 // App header with navigation and primary create action
 import { Link } from 'react-router-dom';
 
-import { alpha, AppBar, Box, Button, Toolbar, Typography } from '@mui/material';
+import {
+  alpha,
+  AppBar,
+  Box,
+  Button,
+  Toolbar,
+  Typography,
+  IconButton,
+} from '@mui/material';
 
 import AddIcon from '@mui/icons-material/Add';
+import MenuIcon from '@mui/icons-material/Menu';
 
 type HeaderProps = {
   onMenuClick?: () => void;
@@ -29,25 +38,38 @@ export default function Header({ onMenuClick }: HeaderProps) {
           px: { xs: 2, sm: 3 },
         }}
       >
-        {/* App branding */}
-        <Typography
-          component={Link}
-          to='/'
-          variant='h6'
-          sx={{
-            fontWeight: 600,
-            letterSpacing: 0.2,
-            whiteSpace: 'nowrap',
-            textDecoration: 'none',
-            color: 'inherit',
-          }}
-        >
-          <Box component='span' sx={{ color: 'primary.main', fontWeight: 700 }}>
-            AI
-          </Box>{' '}
-          Notes App
-        </Typography>
-        {/* Primary action: navigate to create note */}
+        {/* LEFT SIDE: menu + logo */}
+        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          {/* Mobile menu button */}
+          <IconButton
+            onClick={onMenuClick}
+            sx={{ display: { md: 'none' }, mr: 1 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          {/* App branding */}
+          <Typography
+            component={Link}
+            to='/'
+            variant='h6'
+            sx={{
+              fontWeight: 600,
+              letterSpacing: 0.2,
+              whiteSpace: 'nowrap',
+              textDecoration: 'none',
+              color: 'inherit',
+            }}
+          >
+            <Box
+              component='span'
+              sx={{ color: 'primary.main', fontWeight: 700 }}
+            >
+              AI
+            </Box>{' '}
+            Notes App
+          </Typography>
+        </Box>
+        {/* RIGHT SIDE: action button */}
         <Button
           component={Link}
           to='/create'
