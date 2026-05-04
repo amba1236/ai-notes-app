@@ -1,0 +1,121 @@
+{
+  "notes": [
+    {
+      "id": "1",
+      "title": "Task Management Features",
+      "content": "<p>This app is designed to manage daily tasks efficiently.</p><ul><li><p>Create, edit and delete tasks</p></li><li><p>Mark tasks as complete or active</p></li><li><p>Pin important tasks</p></li><li><p>Use tags to organise task</p></li></ul><p></p>",
+      "tags": [
+        "tasks",
+        "features"
+      ],
+      "createdAt": "2026-04-01T10:00:00.000Z",
+      "updatedAt": "2026-05-03T20:09:07.790Z",
+      "favorite": true,
+      "pinned": true,
+      "summary": "Overview of task manager features including CRUD and organisation tools.",
+      "color": "#DBEAFE"
+    },
+    {
+      "title": "Handling Task State",
+      "content": "<p>All tasks are managed in a central state.</p><ul><li><p>Each task includes metadata like tags and timestamps</p></li><li><p>UI updates instantly when tasks change</p></li><li><p>Local storage used for persistence</p></li></ul>",
+      "tags": [
+        "state",
+        "tasks"
+      ],
+      "summary": "All tasks are managed in a central state.. • Each task includes metadata like tags and timestamps. • UI updates instantly when tasks change. • Local storage use... (AI summary)",
+      "createdAt": "2026-04-02T10:00:00.000Z",
+      "updatedAt": "2026-05-04T10:32:01.161Z",
+      "favorite": true,
+      "pinned": true,
+      "color": "#F1F5F9",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "title": "Task Filtering & Search",
+      "content": "<p>Users can easily find tasks using filters.</p><ul><li><p>Filter by completed or active tasks</p></li><li><p>Search tasks with debounced input</p></li><li><p>Multiple filters work together</p></li></ul>",
+      "tags": [
+        "filtering",
+        "tasks"
+      ],
+      "summary": "Users can easily find tasks using filters.. • Filter by completed or active tasks. • Search tasks with debounced input. • Multiple filters work together.... (AI summary)",
+      "createdAt": "2026-04-03T10:00:00.000Z",
+      "updatedAt": "2026-05-03T13:58:24.915Z",
+      "favorite": true,
+      "pinned": false,
+      "color": "#DCFCE7"
+    },
+    {
+      "id": "4",
+      "title": "Component Structure",
+      "content": "<p>The UI is split into reusable components.</p><ul><li><p>Task card for each item</p></li><li><p>Task list container</p></li><li><p>Separate input and controls</p></li></ul><p>This makes the app easier to maintain.</p>",
+      "tags": [
+        "components",
+        "frontend"
+      ],
+      "summary": "The UI is split into reusable components.. • Task card for each item. • Task list container. • Separate input and controls. This makes the app easier to maintai... (AI summary)",
+      "createdAt": "2026-04-04T10:00:00.000Z",
+      "updatedAt": "2026-05-03T13:32:40.894Z",
+      "favorite": false,
+      "pinned": false,
+      "color": "#FEF3C7"
+    },
+    {
+      "id": "5",
+      "title": "Performance Considerations",
+      "content": "<p>Optimisations to keep the app fast:</p><ul><li><p>Debounced search input</p></li><li><p>Memoisation to reduce re-renders</p></li></ul><p></p>",
+      "tags": [
+        "performance",
+        "future"
+      ],
+      "summary": "Highlights performance improvements.",
+      "createdAt": "2026-04-05T10:00:00.000Z",
+      "updatedAt": "2026-05-03T18:54:24.126Z",
+      "favorite": false,
+      "pinned": false,
+      "color": "#E0E7FF"
+    },
+    {
+      "id": "6",
+      "title": "Accessibility",
+      "content": "<p>Accessibility improvements include:</p><ul><li><p>Keyboard navigation</p></li><li><p>Focus states for actions</p></li><li><p>Readable colour contrast</p></li></ul>",
+      "tags": [
+        "a11y"
+      ],
+      "summary": "Covers accessibility decisions.",
+      "createdAt": "2026-04-06T10:00:00.000Z",
+      "updatedAt": "2026-04-06T12:00:00.000Z",
+      "favorite": false,
+      "pinned": false,
+      "color": "#FCE7F3"
+    },
+    {
+      "id": "7",
+      "title": "Challenges Faced",
+      "content": "<p>Some challenges while building:</p><ul><li><p>Handling multiple filters together</p></li><li><p>Keeping state and storage in sync</p></li></ul><p>Used derived state to solve filtering complexity.</p>",
+      "tags": [
+        "challenge"
+      ],
+      "summary": "Explains key challenges and solutions.",
+      "createdAt": "2026-04-07T10:00:00.000Z",
+      "updatedAt": "2026-05-03T19:56:35.014Z",
+      "favorite": false,
+      "pinned": true,
+      "color": "#EDE9FE"
+    },
+    {
+      "id": "8",
+      "title": "Future Improvements",
+      "content": "<p>Next steps for the app:</p><ul><li><p>Drag-and-drop task reordering</p></li><li><p>User accounts</p></li></ul><p></p>",
+      "tags": [
+        "future"
+      ],
+      "summary": "Outlines future plans for the task manager.",
+      "createdAt": "2026-04-08T10:00:00.000Z",
+      "updatedAt": "2026-05-01T11:14:04.810Z",
+      "favorite": false,
+      "pinned": false,
+      "color": "#F1F5F9"
+    }
+  ]
+}

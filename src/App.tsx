@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// Main app routes wrapped with the global Layout component.
+import { Route, Routes } from 'react-router-dom';
 
-function App() {
+import CreateNote from './pages/CreateNotePage';
+import Favorites from './pages/FavoritesNotesPage';
+import Home from './pages/HomePage';
+import Layout from './components/layout/Layout';
+import NoteDetails from './pages/EditNotePage';
+import TagsPage from './pages/TagsNotesPage';
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/create' element={<CreateNote />} />
+        <Route path='/note/:id' element={<NoteDetails />} />
+        <Route path='/favorites' element={<Favorites />} />
+        <Route path='/tags' element={<TagsPage />} />
+      </Routes>
+    </Layout>
   );
 }
-
-export default App;
