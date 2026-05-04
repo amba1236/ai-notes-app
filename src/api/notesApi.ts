@@ -4,7 +4,9 @@ import { Note } from '../types/note';
 
 export const notesApi = createApi({
   reducerPath: 'notesApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000' }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: 'https://ai-notes-backend-l08p.onrender.com',
+  }),
   tagTypes: ['Notes', 'Note'],
 
   endpoints: (builder) => ({
